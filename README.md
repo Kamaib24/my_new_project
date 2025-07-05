@@ -139,3 +139,29 @@ Modern software development demands collaboration across distributed teams. Vers
 
 # Visual Workflow Diagram
 
+          main
+            |
+      ---------------
+     |               |
+feature/xyz     feature/abc
+     |               |
+   Merge PR        Merge PR
+     |               |
+  -------- Continuous Integration -------
+           |                  |
+     Automated Tests   Code Reviews
+           |                  |
+       Merge to main with tags/releases
+
+
+# References
+
+- [Git Flow](https://nvie.com/posts/a-successful-git-branching-model/)
+- [GitHub Flow](https://docs.github.com/en/get-started/quickstart/github-flow)
+- [Semantic Versioning](https://semver.org/)
+- [Conventional Commits](https://www.conventionalcommits.org/)
+- [Pro Git Book](https://git-scm.com/book/en/v2)
+- Tools:
+  - [GitHub Actions](https://docs.github.com/actions)
+  - [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+  - [Bitbucket Pipelines](https://support.atlassian.com/bitbucket-cloud/docs/get-started-with-bitbucket-pipelines/)
